@@ -1,0 +1,61 @@
+@media (max-width:1025px) {
+    #circle span {
+        top:16%;
+        height: 235px;
+    }
+
+    #circle-inner span {
+        top: 22%;
+        height: 205px;
+    }
+}
+@media (max-width:769px) {
+    #circle span {
+        top:27%;
+        height: 180px;
+        width: auto;
+    }
+
+    #circle-inner span {
+    display: none;
+    }
+    fieldset{
+        width: 250px;
+    }
+    .container{
+        width: 280px;
+        height: 280px;
+    }
+}
+@media (max-width:624px) {
+    main{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #circle span {
+     display: none;
+    }
+    .left{
+        height: 100%;
+        width: 100%;
+    }
+   .right{
+       width: 100%;
+   }
+   fieldset{
+    width: 350px;
+}
+    form{
+        display: flex;
+    }
+    .container{
+        width: 280px;
+        height: 280px;
+    }
+}
+@media (max-width:320px) {
+
+    fieldset{
+        width: 300px;
+    }
+}
