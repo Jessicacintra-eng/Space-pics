@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="./css/home.css">
     <link rel="stylesheet" type="text/css" href="./css/mediaquery.css">
 
-    <link rel="icon" href="">
+    <link rel="icon" href="./image/space-rocket-launch.png">
 
 
     <title>Space Pics</title>
@@ -17,26 +17,27 @@
 
 <body id="root">
    <main>
-    <!-- <section id="leftSideInfo">
-        <h2>Astronomy Picture of the Day</h2>
-        <p id="dataEscolhida"></p>
+    <section id="leftSideInfo">
+        <div id="about">
+            <h2>Astronomy Picture of the Day</h2>
+            <p id="dataEscolhida"></p>
+            <img src="" alt="imagem teste"id="media-img">
+            <iframe src="" frameborder="2px"id="media-video"></iframe>
+        </div>
         
-        <article id="explanation">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis cumque est nulla dolores
+        <!-- <article id="explanation">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis cumque est nulla dolores
             veniam deleniti eaque quibusdam rem! Libero ex rem, tempora obcaecati amet necessitatibus ipsam dolor nihil
-            itaque atque.</article>
-    </section> -->
-    <div >
-        <img src="" alt="imagem teste"id="media">
-    </div>
+            itaque atque.</article> -->
+    </section>
     <section id="rightSidePannel">
         <h1>Space pic of the day</h1>
+        <h2>Digite uma data entre 16 de junho de 1995 até hoje:</h2>
+        <input type="date" id="data" min="1996-06-16" placeholder=" " autofocus required/>
         <article>APOD: "O Astronomy Picture of the Day é um website mantido pela NASA e pela Universidade Tecnológica de
             Michigan.
             De acordo com o website, "cada dia uma imagem ou foto diferente do universo é mostrada, com uma curta
             explicação
             escrita por um astrônomo profissional"</article>
-        <h2>A partir dessa premissa digite uma data entre 16 de junho de 1995 até hoje:</h2>
-        <input type="date" id="data" min="1996-06-16" required>
     </section>
 </main>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" ></script>
