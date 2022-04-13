@@ -19,27 +19,34 @@
    <main>
     <section id="leftSideInfo">
         <div id="about">
-            <h2>Astronomy Picture of the Day</h2>
-            <p id="dataEscolhida"></p>
+            <h2 id="name"></h2>
+            <br>           
             <img src="" alt="imagem teste"id="media-img">
             <iframe src="" frameborder="2px"id="media-video"></iframe>
+            <br> 
+            <small>Por: <small id="copyright"></small></small>
+        </div>
+        <div id="loading">
+            <h2>loading...</h2>
         </div>
         
-        <!-- <article id="explanation">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis cumque est nulla dolores
-            veniam deleniti eaque quibusdam rem! Libero ex rem, tempora obcaecati amet necessitatibus ipsam dolor nihil
-            itaque atque.</article> -->
+       
     </section>
     <section id="rightSidePannel">
         <h1>Space pic of the day</h1>
-        <h2>Digite uma data entre 16 de junho de 1995 até hoje:</h2>
+        <h2>Todos os dias uma imagem relacionada com o espaço.
+            Digite uma data entre 16 de junho de 1995 até hoje: </h2>
         <div id="caixa">
-        <input type="date" id="data" min="1996-06-16" class="onfocus" autofocus />
+        <input type="date" id="data" min="1996-06-16" class="onfocus" autofocus  />
         </div>
-        <article>APOD: "O Astronomy Picture of the Day é um website mantido pela NASA e pela Universidade Tecnológica de
+        <br>
+         <article id="explanation"></article>
+         <br>
+        <!-- <article>APOD: "O Astronomy Picture of the Day é um website mantido pela NASA e pela Universidade Tecnológica de
             Michigan.
             De acordo com o website, "cada dia uma imagem ou foto diferente do universo é mostrada, com uma curta
             explicação
-            escrita por um astrônomo profissional"</article>
+            escrita por um astrônomo profissional"</article> -->
     </section>
 </main>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" ></script>
