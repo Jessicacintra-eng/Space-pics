@@ -4,30 +4,31 @@ main {
     height: 100%;
 }
 
-#media-img{
+#media-img {
     display: flex;
     align-items: center;
     justify-content: center;
     border: 5px double #1DA400;
     border-radius: 24px;
-   
-    
+
+
 }
 
-img{
-    height: 500px;
-    width: 800px;
-}
-iframe{
+img {
     height: 500px;
     width: 800px;
 }
 
-#about{
+iframe {
+    height: 500px;
+    width: 800px;
+}
+
+#about {
     width: 50%;
     display: flex;
     flex-direction: column;
-    align-items:center ;
+    align-items: center;
     justify-content: center;
 }
 
@@ -38,10 +39,10 @@ iframe{
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-   
+
 }
 
-#explanation{
+#explanation {
     width: 25%;
 }
 
@@ -57,59 +58,137 @@ iframe{
     gap: 0;
     text-align: center;
 }
-#data{
+
+#data {
     background-color: rgb(0, 0, 0);
-    color:#1DA400;
+    color: #1DA400;
     outline: none;
     font-size: 35px;
     height: 30px;
     font-family: space;
-   
-    padding-left: 35px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    border:dashed;
+    width: 205px;
+
+    border: dashed;
+    padding: 25px 1px;
 
     border-color: #1DA400;
-  }
-  
-  input[type="date"]::-webkit-inner-spin-button,
-  input[type="date"]::-webkit-calendar-picker-indicator {
-    
-      background-color: aliceblue;
-      display: none;
-      -webkit-appearance: none;
-  }
- 
-  article::-moz-selection {
-    background-color: #1DA400;
-    color: #FFF;
-  }
-  article::selection {
-    background-color: #1DA400;
-    color: #FFF;
-  }
-  /* :focus-within{
-    background-color: #1DA400;
-    color: #FFF;
-  } */
-  #data {
-	caret-color: transparent; 
-	outline: none;
+    appearance: none;
+    position: relative;
+    text-transform: uppercase;
 }
-#data:after,
-.typer.active:after {
-	content: "■";
-	animation: cursor 1s infinite;
-	animation-timing-function: step-end;
-	margin-left: 1px;
-	line-height: 1rem;
+
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+
+    position: absolute;
+    display: none;
+    -webkit-appearance: none;
 }
-  /* input[type="date"]:after,
-.typer.active:after {
-	content: "■";
-	animation: cursor 1s infinite;
-	animation-timing-function: step-end;
-	margin-left: 1px;
-	line-height: 1rem;
+
+#data::-webkit-datetime-edit-day-field {
+    caret-color: #a40000;
+    outline: none;
+}
+
+
+/* #caixa{
+    color: #a40000;
+    animation: cursor 3s infinite;  
+    border: #a40000; 
+}
+
+input[type="date"] {
+    animation:
 } */
+
+input[type="date"]::-webkit-datetime-edit-month-field:focus {
+    
+    background-color: #1DA400 ;
+    text-transform: uppercase;
+}
+/* .onfocus{
+    animation: changecolor 3s ease-in-out;
+    
+} */
+input[type="date"]::-webkit-datetime-edit-day-field:focus {
+    background-color: #1DA400 ;
+    text-transform: uppercase;
+}
+
+input[type="date"]::-webkit-datetime-edit-day-field{
+    margin-right: 30px;
+    margin-left: 15px;
+}
+input[type="date"]::-webkit-datetime-edit-year-field{
+    margin-left: 30px;
+    margin-right: 15px;
+}
+
+input[type="date"]::-webkit-datetime-edit-year-field:focus {
+    
+    background-color: #1DA400;
+    text-transform: uppercase;
+}
+input[type="date"]::-webkit-datetime-edit-text{
+    display: none;
+    color: transparent;
+    font-size: 5px !important;
+    margin: 0 10px;
+}
+input[type="date"]::after{
+    content: "";
+    width: 10px;
+    height: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top:50%;
+    left: 25%;
+    background-color:#1DA400;
+    z-index: 3;
+    border-radius: 1.5px;
+}
+
+input[type="date"]::before{
+    content: "";
+    width: 10px;
+    height: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top:50%;
+    right: 38%;
+    background-color: #1DA400;
+    z-index: 3;
+    border-radius: 1.5px;
+    
+}
+
+@keyframes changecolor{
+    from{
+        background-color: #1DA400 ;
+    }
+    50%{
+        background-color: #1ea40089 ;
+    }
+    to{
+        background-color: transparent ;
+    }
+}
+@keyframes cursor {
+	0% {
+		opacity: 1;
+	}
+	25% {
+		opacity: 0;
+	}
+	75% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 1;
+	}
+}
