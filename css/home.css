@@ -161,19 +161,6 @@ input[type="date"]::before {
 
 }
 
-@keyframes changecolor {
-    from {
-        background-color: #1DA400;
-    }
-
-    50% {
-        background-color: #1ea40089;
-    }
-
-    to {
-        background-color: transparent;
-    }
-}
 
 @keyframes cursor {
     0% {
