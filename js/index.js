@@ -25,22 +25,19 @@ $(document).ready(function () {
                 if ($("#media-img").show()) {
                     $("#media-video").hide()
                 }
-                $("#media-img").attr("src", resposta.hdurl)
+                $("#media-img").attr("src", resposta.url)
             } else if (resposta.media_type == "video") {
                 if ($("#media-video").show()) {
                     $("#media-img").hide()
                 }
-                $("#media-video").attr("src", resposta.hdurl)
+                $("#media-video").attr("src", resposta.url)
             }
         },
     });
 });
-$("#about").show()
-$("#loading").hide() 
 
 $("#data").change(function () {
-    $("#about").hide() 
-    $("#loading").show()
+    
     onChange = true;
     clearTimeout(time);
     time = setTimeout(function () {
@@ -58,19 +55,18 @@ $("#data").change(function () {
                     if ($("#media-img").show()) {
                         $("#media-video").hide()
                     }
-                    $("#media-img").attr("src", resposta.hdurl)
-                    $("#about").show()
+                    $("#media-img").attr("src", resposta.url)
+                 
                 } else if (resposta.media_type == "video") {
                     if ($("#media-video").show()) {
                         $("#media-img").hide()
                     }
-                    $("#media-video").attr("src", resposta.hdurl)
-                    $("#about").show()
+                    $("#media-video").attr("src", resposta.url)
+                    
                 }
             },
         });
-        
-    }, 2000)
-   
+    }, 1000)
+    
  
 })

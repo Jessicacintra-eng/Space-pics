@@ -92,12 +92,12 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 
-/* #caixa{
+#caixa{
     color: #a40000;
-    animation: cursor 3s infinite;  
+    animation: cursor 8s infinite;  
     border: #a40000; 
 }
-
+/* 
 input[type="date"] {
     animation:
 } */
